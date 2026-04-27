@@ -99,7 +99,7 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="p-5 bg-[#222222] rounded-[40px] relative">
+        <footer className="p-5 bg-[#222222]  rounded-[40px] relative">
 
             <section className="bg-[#006600] px-6 py-16 text-center relative overflow-hidden rounded-4xl">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_40%,rgba(255,255,255,0.04),transparent_70%)] pointer-events-none" />
@@ -191,7 +191,7 @@ export default function Footer() {
   </div>
 
   {/* SOCIALS */}
-  <div className="pt-6 flex justify-center lg:justify-start">
+  <div className="pt-6 flex lg:absolute bottom-3.5 justify-center lg:justify-start">
     <div className="flex gap-2.5">
       {socialLinks.map((s) => (
         <a

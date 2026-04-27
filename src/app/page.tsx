@@ -36,14 +36,14 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen w-full overflow-x-hidden bg-[#F2F2F2]">
-      <nav className={` ${menuOpen ? 'bg-[#222222dd]' : ''} fixed inset-x-0 top-0 z-50  md:bg-[#222222dd]  px-4 py-3.5 sm:px-6 md:px-10 lg:px-16`}>
+      <nav className={` ${menuOpen ? 'bg-[#22222280]' : ''} fixed inset-x-0 top-0 z-50  md:bg-[#22222280] backdrop-blur-xs  px-4 py-3.5 sm:px-6 md:px-10 lg:px-16`}>
         <div className=" flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <Image width={40} height={40} src="/zoilLogo.png" alt="Zech Oil and Gas Logo" className="h-10 w-auto" />
             <h1 className="hidden md:block text-base font-bold uppercase  text-white sm:text-lg">ZECH OIL AND GAS</h1>
           </div>
 
-          <div className="hidden items-center gap-6 lg:flex">
+          <div className="hidden items-center gap-20 lg:flex">
             {navItems.map((label) => (
               <button key={label} className="flex items-center gap-2 text-sm font-medium text-white transition">
                 <span>{label}</span>
@@ -77,7 +77,7 @@ export default function LandingPage() {
               </span>
             </button>
 
-            <div className="hidden rounded-full border border-white/20 bg-white/10 px-3 py-2 w-70.75 lg:flex justify-end">
+            <div className="hidden rounded-full border border-white/20 bg-white/10 pe-1 py-1 w-70.75 lg:flex justify-end">
               <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="35" height="32" rx="16" fill="white" />
                 <path d="M15.5552 20.8663C19.318 20.8663 22.3683 17.816 22.3683 14.0533C22.3683 10.2905 19.318 7.24023 15.5552 7.24023C11.7925 7.24023 8.74219 10.2905 8.74219 14.0533C8.74219 17.816 11.7925 20.8663 15.5552 20.8663Z" stroke="#006600" strokeWidth="1.95" strokeLinecap="round" strokeLinejoin="round" />

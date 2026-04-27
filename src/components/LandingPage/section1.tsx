@@ -27,23 +27,25 @@ function HeroSection() {
 
     return (
         <motion.section
-            className="px-4 sm:px-8 md:px-16 w-full hero-bg h-fit flex flex-col justify-center gap-8"
+            className="px-4 sm:px-8 md:px-16 w-full hero-bg h-fit flex flex-col justify-center "
             initial="hidden"
             animate="visible"
         >
-            <motion.h1
-                className="text-xl md:text-6xl lg:text-[80px] leading-[1.1] text-white font-bold max-w-full md:max-w-200 mt-36"
-                variants={textVariant}
-            >
-                Driving Progress Through <br /> Industrial Excellence
-            </motion.h1>
 
+            
             <motion.div
-                className="bg-[#006600] border-2 border-[#559955] rounded-full p-3 md:p-2 text-white text-xs sm:text-sm font-medium w-fit"
+                className="bg-[#006600] border-2 border-[#559955] mt-36 rounded-full p-3 md:p-2 text-white text-xs sm:text-sm font-medium w-fit"
                 variants={chipVariant}
             >
                 <p>Nigeria&apos;s Indigenous O&amp;G Services Partner · Est. 2001</p>
             </motion.div>
+            <motion.h1
+                className="text-xl md:text-6xl lg:text-[80px] leading-[1.1] text-white font-bold max-w-full md:max-w-200 "
+                variants={textVariant}
+            >
+                Driving Progress Through Industrial <br />  Excellence
+            </motion.h1>
+
 
             <section className='flex flex-col items-start md:items-end justify-center w-full'>
                 <div className="flex flex-wrap items-center justify-start md:justify-end gap-4 md:gap-7 me-2 mt-4 w-full">
