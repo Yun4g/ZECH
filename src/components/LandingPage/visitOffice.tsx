@@ -2,24 +2,24 @@
 
 export default function VisitOffice() {
     return (
-        <section className="w-full grid grid-cols-1 lg:grid-cols-2 bg-[#F5F4F7] rounded-4xl overflow-hidden">
+        <section className="w-full grid grid-cols-1 lg:grid-cols-2 bg-[#F5F4F7] rounded-xl md:rounded-4xl overflow-hidden">
 
 
-            <div className=" px-6 md:px-24 py-16 flex flex-col gap-8">
+            <div className=" px-3 md:px-24 py-4 md:py-16 flex flex-col gap-8">
 
                 <div>
                     <h2 className="text-xl md:text-3xl font-bold text-[#000000] mb-4">
                         Visit Our Office
                     </h2>
 
-                    <p className="text-[#000000] text-xl  max-w-86.25 ">
+                    <p className="text-[#000000] text-base md:text-xl  max-w-86.25 ">
                         From first plans to final finishes, Our staffs are here to help with
                         honest advice and local expertise
                     </p>
                 </div>
 
 
-                <div className="bg-white rounded-lg p-5 flex items-center gap-4 md:mt-18.5">
+                <div className="bg-white rounded-lg p-5 flex flex-col md:flex-row items-center  gap-4 md:mt-18.5">
                     <div>
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="40" height="40" rx="20" fill="#E4E4E6" />
@@ -38,7 +38,7 @@ export default function VisitOffice() {
                 </div>
 
 
-                <div className="bg-white rounded-lg p-5 flex items-start gap-4 ">
+                <div className="bg-white rounded-lg p-5 flex flex-col md:flex-row items-center  gap-4 ">
                     <div >
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="40" height="40" rx="20" fill="#E4E4E6" />
@@ -60,7 +60,7 @@ export default function VisitOffice() {
                 </div>
 
 
-                <div className="bg-white rounded-lg p-5 flex items-center gap-4 ">
+                <div className="bg-white rounded-lg p-5 flex flex-col md:flex-row items-center  gap-4 ">
                     <div >
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="40" height="40" rx="20" fill="#E4E4E6" />
@@ -71,7 +71,7 @@ export default function VisitOffice() {
                     </div>
                     <div>
                         <p className="text-sm text-[#000000] font-normal">Visit us at:</p>
-                        <p className="font-semibold text-gray-900 text-base leading-relaxed">
+                        <p className="font-semibold text-gray-900 text-sm md:text-base leading-relaxed">
                            
                            Plot 93, Rumuogba Rumuogba Estate,  <br />
                             Port Harcourt Rivers State NigeriaPlot 93, Rumuogba Rumuogba Estate, Port  <br />

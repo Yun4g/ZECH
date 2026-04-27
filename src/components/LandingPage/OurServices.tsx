@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const services = [
     {
@@ -68,45 +69,112 @@ const services = [
 ];
 
 export default function ServicesSection() {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.1,
+                delayChildren: 0.2,
+            },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.6,
+            },
+        },
+    };
+
+    const cardVariants = {
+        hidden: { opacity: 0, scale: 0.95 },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                duration: 0.5,
+            },
+        },
+        hover: {
+            y: -5,
+            boxShadow: "0 20px 40px rgba(0, 0, 0, 0.2)",
+            transition: {
+                duration: 0.3,
+            },
+        },
+    };
+
     return (
         <section className="w-full mt-15">
 
 
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12.5  w-full">
-                <div className=" w-full">
-                    <p className="text-[#006600] text-[24px]  font-semibold mb-3">Our Services</p>
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12.5 w-full">
+                <motion.div
+                    className="w-full"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.2 }}
+                    variants={containerVariants}
+                >
+                    <motion.p
+                        className="text-[#006600] text-[24px] font-semibold mb-3"
+                        variants={itemVariants}
+                    >
+                        Our Services
+                    </motion.p>
 
-                    <h2 className="text-3xl md:text-[40px]  font-bold text-[#222222] leading-tight max-w-175">
+                    <motion.h2
+                        className="text-3xl md:text-[40px] font-bold text-[#222222] leading-tight max-w-175"
+                        variants={itemVariants}
+                    >
                         Tailored Industrial and Engineering Solutions
-                    </h2>
+                    </motion.h2>
 
 
-                    <section className="flex justify-between items-center">
+                    <motion.section
+                        className="flex flex-col md:flex-row justify-between md:items-center gap-4 md:gap-0"
+                        variants={itemVariants}
+                    >
                         <p className="text-[#000000] text-base font-medium mt-3">
                             We offer a comprehensive range of services <br />
                             tailored to meet your needs
                         </p>
 
-                        <button className="bg-[#006600] text-sm font-medium  text-white ps-5  mt-5 rounded-full flex items-center gap-1.5 w-fit">
+                        <motion.button
+                            className="bg-[#006600] text-sm font-medium text-white ps-5 mt-5 rounded-full flex items-center gap-1.5 w-fit"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
                             View all services
                             <span>
                                 <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="22.7673" width="30.4626" height="31.9993" rx="15.2313" transform="rotate(45.3566 22.7673 0)" fill="white" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8199 26.296C17.6802 26.1544 17.6023 25.9632 17.6036 25.7643C17.6048 25.5654 17.685 25.3751 17.8265 25.2353L24.0094 19.1289L19.4557 19.1006C19.2616 19.0925 19.0781 19.0094 18.944 18.8688C18.8099 18.7281 18.7357 18.5409 18.7369 18.3466C18.7381 18.1522 18.8147 17.966 18.9505 17.827C19.0863 17.688 19.2708 17.6072 19.4651 17.6016L25.8289 17.6412C26.0277 17.6425 26.2177 17.7227 26.3574 17.8641C26.4971 18.0055 26.5749 18.1966 26.5738 18.3953L26.5341 24.7592C26.5261 24.9533 26.443 25.1368 26.3023 25.2709C26.1617 25.405 25.9745 25.4793 25.7801 25.478C25.5858 25.4768 25.3995 25.4002 25.2606 25.2644C25.1216 25.1286 25.0408 24.9441 25.0351 24.7499L25.0635 20.1962L18.8806 26.3026C18.739 26.4423 18.5478 26.5202 18.3489 26.5189C18.15 26.5177 17.9597 26.4375 17.8199 26.296Z" fill="#222222" />
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M17.8199 26.296C17.6802 26.1544 17.6023 25.9632 17.6036 25.7643C17.6048 25.5654 17.685 25.3751 17.8265 25.2353L24.0094 19.1289L19.4557 19.1006C19.2616 19.0925 19.0781 19.0094 18.944 18.8688C18.8099 18.7281 18.7357 18.5409 18.7369 18.3466C18.7381 18.1522 18.8147 17.966 18.9505 17.827C19.0863 17.688 19.2708 17.6072 19.4651 17.6016L25.8289 17.6412C26.0277 17.6425 26.2177 17.7227 26.3574 17.8641C26.4971 18.0055 26.5749 18.1966 26.5738 18.3953L26.5341 24.7592C26.5261 24.9533 26.443 25.1368 26.3023 25.2709C26.1617 25.405 25.9745 25.4793 25.7801 25.478C25.5858 25.4768 25.3995 25.4002 25.2606 25.2644C25.1216 25.1286 25.0408 24.9441 25.0351 24.7499L25.0635 20.1962L18.8806 26.3026C18.739 26.4423 18.5478 26.5202 18.3489 26.5189C18.15 26.5177 17.9597 26.4375 17.8199 26.296Z" fill="#222222" />
                                 </svg>
 
                             </span>
-                        </button>
-                    </section>
+                        </motion.button>
+                    </motion.section>
 
 
-                </div>
+                </motion.div>
 
 
             </div>
 
 
-            <div className="relative w-full h-125  md:h-150 rounded-2xl overflow-hidden">
+            <motion.div
+                className="relative w-full h-125 md:h-150 rounded-2xl overflow-hidden"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={containerVariants}
+            >
 
 
                 <Image
@@ -123,47 +191,70 @@ export default function ServicesSection() {
                 <div className="absolute bottom-0 left-0 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
 
                     {services.map((service, index) => (
-                        <div
+                        <motion.div
                             key={index}
-                            className={`px-5 pt-8.5 pbe-3.5 ${service.title === "Logistics" ? "" : "border-r border-[#91909080]"} bg-[#22222280]  text-white flex flex-col justify-between min-h-55`}
+                            className={`px-5 pt-8.5 pb-3.5 ${service.title === "Logistics" ? "" : "border-r border-[#91909080]"} bg-[#22222280] text-white flex flex-col justify-between min-h-55 transition-all duration-300`}
+                            variants={cardVariants}
+                            whileHover="hover"
                         >
                             <div>
-                                <span>
+                                <motion.span
+                                    initial={{ scale: 0 }}
+                                    whileInView={{ scale: 1 }}
+                                    transition={{ delay: 0.1 + index * 0.1, duration: 0.4 }}
+                                    viewport={{ once: true }}
+                                >
                                     {service.icon}
-                                </span>
+                                </motion.span>
 
-                                 <h3 className="  md:text-[24px] text-[#FFFFFF] font-semibold mt-4 mb-7.5 ">
+                                <motion.h3
+                                    className="text-base md:text-[24px] text-[#FFFFFF] font-semibold mt-4 mb-7.5"
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
+                                    transition={{ delay: 0.2 + index * 0.1, duration: 0.5 }}
+                                    viewport={{ once: true }}
+                                >
                                     {service.title}
-                                </h3>
+                                </motion.h3>
 
-                                <ul className="space-y-2 text-sm text-white">
+                                <motion.ul
+                                    className="space-y-2 text-xs md:text-sm text-white"
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
+                                    transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
+                                    viewport={{ once: true }}
+                                >
                                     {service.items.map((item, i) => (
-                                        <li key={i} className="flex items-start gap-4 text-sm">
-                                            <span className="mt-0.5">
+                                        <li key={i} className="flex items-start gap-4 text-xs md:text-sm">
+                                            <span className="mt-0.5 shrink-0">
                                                 <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M5 0L3.5 4.9L0 8.65L5 7.5L10 8.7L6.5 4.95L5 0Z" fill="white" />
                                                 </svg>
                                             </span>
-                                            {item}
+                                            <span>{item}</span>
                                         </li>
                                     ))}
-                                </ul>
+                                </motion.ul>
                             </div>
 
-                            <button className="mt-6 bg-[#006600]  text-white p-2.5 rounded-full w-fit text-xs font-semibold flex items-center gap-x-1.5">
+                            <motion.button
+                                className="mt-6 bg-[#006600] text-white p-2.5 rounded-full w-fit text-xs font-semibold flex items-center gap-x-1.5"
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.95 }}
+                            >
                                 Read More
                                 <span>
                                     <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.071 7.071L1.414 12.728L0 11.314L4.95 6.364L0 1.414L1.414 0L7.071 5.657C7.25847 5.84453 7.36379 6.09884 7.36379 6.364C7.36379 6.62916 7.25847 6.88347 7.071 7.071Z" fill="white" />
+                                        <path fillRule="evenodd" clipRule="evenodd" d="M7.071 7.071L1.414 12.728L0 11.314L4.95 6.364L0 1.414L1.414 0L7.071 5.657C7.25847 5.84453 7.36379 6.09884 7.36379 6.364C7.36379 6.62916 7.25847 6.88347 7.071 7.071Z" fill="white" />
                                     </svg>
 
                                 </span>
-                            </button>
-                        </div>
+                            </motion.button>
+                        </motion.div>
                     ))}
 
                 </div>
-            </div>
-        </section >
+            </motion.div>
+        </section>
     );
 }

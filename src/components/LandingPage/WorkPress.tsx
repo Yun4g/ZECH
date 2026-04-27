@@ -7,7 +7,7 @@ export default function WorkProcess() {
         <section>
 
 
-            <h1 className="text-[42px] md:text-[72px] lg:text-[150px] text-center w-full font-bold text-black mb-12">
+            <h1 className="text-[22px] md:text-[72px] lg:text-[150px] text-center w-full font-bold text-black mb-12">
                 Work Process
             </h1>
 
@@ -39,21 +39,21 @@ export default function WorkProcess() {
                     ].map((item, i) => (
                         <div
                             key={i}
-                            className="bg-white md:px-7.5 md:py-10  rounded-sm  "
+                            className="bg-white px-4 py-4 md:px-5 md:py-9  rounded-xl md:rounded-[31px]  "
                         >
-                            <h2 className="text-[40px] md:text-[96px] font-bold text-black mb-7">
+                            <h2 className="text-[40px] md:text-[76px] font-bold text-black ">
                                 {item.num}
                             </h2>
                                     
-                            <p className="text-[#006600] font-semibold max-w- text-base md:text-xl">
+                            <p className="text-[#006600] font-semibold max-w- mb-4 text-base md:text-xl">
                                 {item.title}
                             </p>
 
-                            <h3 className="font-bold text-black mt-8.25 text-base md:text-[20px]">
+                            <h3 className="font-bold text-black  text-base md:text-[20px]">
                                 {item.subtitle}
                             </h3>
 
-                            <p className="text-[#000000] mt-8.25 font-normal text-sm leading-relaxed">
+                            <p className="text-[#000000] md:mt-4 font-normal text-sm leading-relaxed">
                                 {item.desc}
                             </p>
                         </div>
@@ -63,13 +63,13 @@ export default function WorkProcess() {
             </div>
 
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
                 <div>
                     <p className="text-[#006600] font-semibold mb-3 text-[24px] ">
                         Our Projects
                     </p>
 
-                    <h2 className="text-[22px] md:text-[48px] font-medium leading-tight mb-4">
+                    <h2 className="text-[20px] md:text-[48px] font-medium leading-tight mb-4">
                         Built to perform,
                         <br /> proven to last
                     </h2>
@@ -103,25 +103,25 @@ export default function WorkProcess() {
                 </div>
 
 
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 mt-4.5 lg:mt-0">
 
-                    <div className="bg-white p-6 md:p-10 rounded-xl shadow-sm flex justify-between items-center">
-                        <h3 className="font-semibold text-black max-w-xs text-[20px]">
+                    <div className="bg-white p-6 md:p-10 rounded-xl shadow-sm flex flex-col lg:flex-row justify-between items-center">
+                        <h3 className="font-semibold text-black max-w-xs text-base  md:text-[20px]">
                             Procurement Of Marine Hoses
                         </h3>
 
-                        <button className="border border-gray-400 px-2 py-1 rounded-md  text-base">
+                        <button className="border border-gray-400 px-2 py-1 rounded-md mt-1.5  lg:mt-0  text-base">
                             View Project
                         </button>
                     </div>
 
 
-                    <div className="bg-white p-6 md:p-10 rounded-xl shadow-sm flex justify-between items-center">
-                        <h3 className="font-semibold text-black max-w-xs text-[20px]">
+                    <div className="bg-white p-6 md:p-10 rounded-xl shadow-sm flex  flex-col lg:flex-row justify-between items-center">
+                        <h3 className="font-semibold text-black max-w-xs text-base md:text-[20px]">
                             Refurbishment and Resetting of Marine Break Way Couplings
                         </h3>
 
-                        <button className="border border-gray-400 px-2 py-1 rounded-md text-base  ">
+                        <button className="border border-gray-400 px-2 py-1 mt-1.5  lg:mt-0 rounded-md text-base  ">
                             View Project
                         </button>
                     </div>

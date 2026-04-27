@@ -125,94 +125,87 @@ export default function Footer() {
             </section>
 
 
-            <div className="  `mt-10 md:mt-15 ">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+       <div className="mt-10 md:mt-15">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
+    {/* ABOUT */}
+    <div className="lg:col-span-1">
+      <h3 className="font-serif text-white text-base md:text-xl font-semibold mb-4">
+        Zech oil & gas
+      </h3>
+      <p className="text-[#FFFFFF] text-lg leading-relaxed max-w-sm">
+        We provide integrated service packages from turnkey onshore/offshore pipeline operations, procurement,
+        maintenance, repairs and supplies services, marine and energy services.
+      </p>
+    </div>
 
-                    <div className="lg:col-span-1">
-                        <h3 className="font-serif text-white text-base md:text-xl font-semibold mb-4">
-                            Zech oil &amp; gas
-                        </h3>
-                        <p className="text-[#FFFFFF] text-lg leading-relaxed max-w-sm">
-                            We provide integrated service packages from turnkey onshore/offshore pipeline operations, procurement,
-                            maintenance, repairs and supplies services, marine and energy services.
-                        </p>
-                    </div>
+    {/* COMPANY LINKS */}
+    <div className="flex flex-col md:ms-20 lg:ms-28">
+      <h4 className="text-white text-[24px] font-semibold mb-5">Company</h4>
+      <ul className="flex flex-col gap-y-5">
+        {navLinks.map((link) => (
+          <li key={link}>
+            <a href="#" className="text-white text-lg leading-snug">
+              {link}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
 
+    {/* CONTACT */}
+    <div>
+      <h4 className="text-white text-[24px] font-semibold mb-5">Contact Us</h4>
 
-                    <div className="flex flex-col  ms-28">
-                        <h4 className="text-white text-[24px]  font-semibold mb-5">Company</h4>
-                        <ul className="flex flex-col items-start  justify-start  gap-y-5.5">
-                            {navLinks.map((link) => (
-                                <li key={link}>
-                                    <a href="#" className="text-white text-lg text-start leading-snug whitespace-pre-line">
-                                        {link}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-
-                    <div>
-                        <h4 className="text-white text-[24px]  font-semibold mb-5">Contact Us</h4>
-
-                        <div className="flex flex-col gap-y-8 ">
-                            {contactItems.map((item, i) => (
-                                <div key={i} className="flex items-center gap-4.5">
-                                    <div className="w-10 h-10 min-w-10 bg-[#2a2a2a] border border-[#2e2e2e] rounded-full flex items-center justify-center">
-                                        {item.icon}
-                                    </div>
-                                    <span className="text-white text-lg leading-snug whitespace-pre-line">
-                                        {item.label}
-                                    </span>
-                                </div>
-                            ))}
-                        </div>
-
-                 <section className="mt-3  lg:mt-8 flex flex-col md:flex-row justify-between w-full items-center gap-6">
-
-                            
-
-                            <div className="flex bg-[#f5f5f0] rounded-full p-1 overflow-hidden  ">
-                                <input
-                                    type="email"
-                                    placeholder="Email address"
-                                    className="flex-1 bg-transparent border-none outline-none px-5 py-3 text-sm text-[#333] placeholder:text-[#999] min-w-0"
-                                />
-                                <button
-                                    type="button"
-                                    className="bg-[#1d6b1d] hover:bg-[#155715] text-white rounded-full px-6 py-3 text-sm font-medium whitespace-nowrap transition-colors"
-                                >
-                                    Subscribe
-                                </button>
-                            </div>
-                 </section>
-
-
-                    </div>
-
-                    <div className="pt-6 absolute bottom-2.5 flex flex-col sm:flex-row items-center justify-between gap-4">
-                                <div className="flex gap-2.5">
-                                    {socialLinks.map((s) => (
-                                        <a
-                                            key={s.label}
-                                            href="#"
-                                            aria-label={s.label}
-                                            className="w-9 h-9 bg-[#2a2a2a] border border-[#2e2e2e] rounded-full flex items-center justify-center hover:bg-[#333] hover:border-[#444] transition-all"
-                                        >
-                                            {s.icon}
-                                        </a>
-                                    ))}
-                                </div>
-                            </div>
-
-                </div>
-
-                 
-
-
+      <div className="flex flex-col gap-y-6 md:gap-y-8">
+        {contactItems.map((item, i) => (
+          <div key={i} className="flex items-center gap-4">
+            <div className="w-10 h-10 min-w-10 bg-[#2a2a2a] border border-[#2e2e2e] rounded-full flex items-center justify-center">
+              {item.icon}
             </div>
+            <span className="text-white text-sm md:text-lg whitespace-pre-line">
+              {item.label}
+            </span>
+          </div>
+        ))}
+      </div>
+
+      {/* NEWSLETTER */}
+      <section className="mt-6 lg:mt-8 w-full">
+        <div className="flex w-fit md:w-full bg-[#f5f5f0] rounded-full p-1 md:overflow-hidden">
+          <input
+            type="email"
+            placeholder="Email address"
+            className="md:flex-1 bg-transparent outline-none px-4 md:px-5 py-2 md:py-3 text-sm text-[#333] placeholder:text-[#999]"
+          />
+          <button
+            type="button"
+            className="bg-[#1d6b1d] hover:bg-[#155715] text-white rounded-full px-2 md:px-6 py-2 md:py-3 text-sm font-medium"
+          >
+            Subscribe
+          </button>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  {/* SOCIALS */}
+  <div className="pt-6 flex justify-center lg:justify-start">
+    <div className="flex gap-2.5">
+      {socialLinks.map((s) => (
+        <a
+          key={s.label}
+          href="#"
+          aria-label={s.label}
+          className="w-9 h-9 bg-[#2a2a2a] border border-[#2e2e2e] rounded-full flex items-center justify-center hover:bg-[#333] hover:border-[#444] transition-all"
+        >
+          {s.icon}
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
         </footer>
     );
 }
