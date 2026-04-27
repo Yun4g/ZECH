@@ -14,12 +14,12 @@ const logos = [
 
 export default function Partners() {
   return (
-    <section className="w-full bg-[#f3f3f3] py-10 overflow-hidden">
+    <section className="w-full bg-[#f3f3f3] py-4 overflow-hidden">
       
    
       <div className="flex justify-center mb-15">
-        <div className="bg-[#006600] text-white p-2.5 border-2 border-[#559955] rounded-full text-xs font-medium">
-          Trusted Partners
+        <div className="text-[#006600] p-2.5  rounded-full text-sm md:text-3xl font-medium">
+        Trusted Partners
         </div>
       </div>
 

@@ -161,11 +161,11 @@ export default function CoreValues() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="w-full lg:w-[40%] h-full sm:h-100 lg:h-auto"
+          className="w-full hidden md:block lg:w-[40%] h-full sm:h-100 lg:h-auto"
         >
           <img
-            src="/coreVALUSErIG.png"
-            className="w-full h-full object-cover"
+            src="/core vlaue.png"
+            className="object-cover"
             alt=""
           />
         </motion.div>
@@ -215,9 +215,9 @@ export default function CoreValues() {
           </div>
 
        
-          <div className="bg-white w-full px-4 sm:px-8 md:px-12 py-6 h-fit flex flex-col md:flex-row gap-8">
+          <div className=" w-full px-4 sm:px-8 md:px-12 py-6 h-fit flex flex-wrap justify-center  lg:justify-start gap-3.25 ">
             
-            <motion.div variants={cardVariant} className="flex flex-col gap-4 w-full md:w-1/2">
+            <motion.div variants={cardVariant} className="flex flex-col gap-4 max-w-65.75 p-5 bg-white rounded-4xl">
               <div>
                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="44" height="44" fill="#CCE0CC" />
@@ -228,7 +228,7 @@ export default function CoreValues() {
 
               <div>
                 <h3 className="font-bold text-base text-[#222222]">Our Mission</h3>
-                <p className="text-[#000000] text-sm mt-2 max-w-sm">
+                <p className="text-[#000000] text-sm mt-2 max-w-65.75">
                   To constantly seek innovative approaches to problem-solving
                   within the Oil & Gas and Construction industries.
                 </p>
@@ -236,9 +236,9 @@ export default function CoreValues() {
             </motion.div>
 
           
-            <div className="hidden md:block w-0.5 bg-[#6B6B6B]" />
+  
 
-            <motion.div variants={cardVariant} className="flex flex-col gap-4 w-full md:w-1/2">
+            <motion.div variants={cardVariant} className="flex flex-col gap-4 p-5 max-w-65.75 bg-white rounded-4xl">
               <div>
                   <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="44" height="44" fill="#CCE0CC" />
@@ -247,7 +247,7 @@ export default function CoreValues() {
               </div>
               <div>
                 <h3 className="font-bold text-base text-[#222222]">Our Vision</h3>
-                <p className="text-[#000000] text-sm mt-2 max-w-sm">
+                <p className="text-[#000000] text-sm mt-2 max-w-65.75 w-fit">
                   We seek better ways of managing people, materials, and capital
                   using technology as a catalyst in achieving client expectation.
                 </p>
