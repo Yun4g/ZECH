@@ -19,7 +19,7 @@ export default function Partners() {
 
 
   return (
-    <section className="w-full bg-[#f3f3f3]  overflow-hidden">
+    <section className="w-full bg-[#f3f3f3]  overflow-hidden ">
 
 
       <div className="flex justify-center md:mb-16">
@@ -29,7 +29,7 @@ export default function Partners() {
       </div>
 
 
-      <div className="relative w-full overflow-hidden">
+      <div className="relative w-full overflow-hidden pause-on-hover">
         <div className="flex w-max whitespace-nowrap animate-scroll gap-16">
 
           {multipliedLogos.map((logo, index) => (
