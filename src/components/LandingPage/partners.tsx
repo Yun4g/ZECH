@@ -13,15 +13,16 @@ const logos = [
 ];
 
 export default function Partners() {
-  const multiplied = 39;
+  const multiplied = 49;
 
   const multipliedLogos = Array(multiplied).fill(logos).flat();
 
 
+
+
+
   return (
     <section className="w-full bg-[#f3f3f3]  overflow-hidden ">
-
-
       <div className="flex justify-center md:mb-16">
         <div className="text-[#006600] p-2.5  rounded-full text-lg md:text-3xl font-medium">
           Trusted Partners
@@ -30,6 +31,7 @@ export default function Partners() {
 
 
       <div className="relative w-full overflow-hidden pause-on-hover">
+        
         <div className="flex w-max whitespace-nowrap animate-scroll gap-16">
 
           {multipliedLogos.map((logo, index) => (
