@@ -32,7 +32,7 @@ export default function ProjectCards() {
                         className="min-h-35 p-6 md:p-10 flex flex-col lg:flex-row justify-between items-center"
                         variants={{
                             rest: { minHeight: "140px" },
-                            hover: { minHeight: "258px" },
+                            hover: { minHeight: "208px" },
                         }}
                         transition={{ duration: 0.35 }}
                     >

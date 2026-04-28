@@ -64,7 +64,7 @@ export default function WorkProcess() {
             </div>
 
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start ">
                 <div>
                     <p className="text-[#006600] font-semibold mb-3 text-[24px]  text-center md:text-start">
                         Our Projects
