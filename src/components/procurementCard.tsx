@@ -40,7 +40,7 @@ export default function ProjectCards() {
                             {project.title}
                         </h3>
 
-                        <button className="border border-gray-400 px-3 py-1.5 rounded-md mt-4 lg:mt-0 text-sm">
+                        <button className="border border-gray-400 px-2 py-1.5 rounded-full mt-4 lg:mt-0 text-sm">
                             View Project
                         </button>
                     </motion.div>
