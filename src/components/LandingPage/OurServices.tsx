@@ -188,7 +188,7 @@ export default function ServicesSection() {
                 <div className="absolute inset-0 bg-[#22222280]" />
 
 
-                <div className="absolute bottom-0 left-0 md:px-4 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="absolute bottom-0 left-0 md:px-4 w-full py-1.5 md:py-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
 
                     {services.map((service, index) => (
                         <motion.div

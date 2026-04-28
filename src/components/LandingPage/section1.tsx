@@ -62,7 +62,7 @@ function HeroSection() {
                     ))}
                 </div>
 
-                <div className='flex flex-col w-full md:w-lg boder-2 md:me-2'>
+                <div className='flex flex-col w-full md:w-lg boder-2 md:me-2 '>
                     <motion.p
                         className="text-white text-base md:text-xl mt-3.5 borer-2  font-semibold md:w-127.5 wrap-break-word text-center  md:text-start"
                         initial={{ opacity: 0, x: 50 }}

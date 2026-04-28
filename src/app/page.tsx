@@ -12,6 +12,7 @@ import Image from "next/image";
 
 export default function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
+  console.log(menuOpen, "menu open state")
   const navItems = ["About us", "Services", "Projects"];
 
   const Details = [
@@ -36,7 +37,7 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen w-full overflow-x-hidden bg-[#F2F2F2]">
-      <nav className={` ${menuOpen ? 'bg-[#22222280]' : ''} fixed inset-x-0 top-0 z-50  md:bg-[#22222280]  lg:backdrop-blur-[2px]  px-4 py-3.5 sm:px-6 md:px-10 lg:px-16`}>
+      <nav className={` ${menuOpen ? 'bg-[#22222280]' : ''} fixed inset-x-0 top-0 z-50  lg:bg-[#22222280]  lg:backdrop-blur-[2px]  px-4 py-3.5 sm:px-6 md:px-10 lg:px-16`}>
         <div className=" flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <Image width={40} height={40} src="/zoilLogo.png" alt="Zech Oil and Gas Logo" className="h-10 w-auto" />
@@ -77,17 +78,27 @@ export default function LandingPage() {
               </span>
             </button>
 
-            <div className="hidden rounded-full border border-white/20 bg-white/10 pe-1 py-1 w-70.75 lg:flex justify-end">
-              <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="35" height="32" rx="16" fill="white" />
-                <path d="M15.5552 20.8663C19.318 20.8663 22.3683 17.816 22.3683 14.0533C22.3683 10.2905 19.318 7.24023 15.5552 7.24023C11.7925 7.24023 8.74219 10.2905 8.74219 14.0533C8.74219 17.816 11.7925 20.8663 15.5552 20.8663Z" stroke="#006600" strokeWidth="1.95" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M20.4219 18.9199L26.2616 24.7597" stroke="#006600" strokeWidth="1.95" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+            <div className="hidden lg:flex">
+              <button
+                className='bg-white rounded-full ps-4 py-[3.58px] w-fit flex items-center gap-3  cursor-pointer'
+
+              >
+                <p className="text-sm font-medium">
+                  Get In Touch
+                </p>
+
+                <span>
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="22.7673" width="30.4626" height="31.9993" rx="15.2313" transform="rotate(45.3566 22.7673 0)" fill="#006600" />
+                    <path fillRule="evenodd" clipRule="evenodd" d="M17.8199 26.296C17.6802 26.1544 17.6023 25.9632 17.6036 25.7643C17.6048 25.5654 17.685 25.3751 17.8265 25.2353L24.0094 19.1289L19.4557 19.1006C19.2616 19.0925 19.0781 19.0094 18.944 18.8688C18.8099 18.7281 18.7357 18.5409 18.7369 18.3466C18.7381 18.1522 18.8147 17.966 18.9505 17.827C19.0863 17.688 19.2708 17.6072 19.4651 17.6016L25.8289 17.6412C26.0277 17.6425 26.2177 17.7227 26.3574 17.8641C26.4971 18.0055 26.5749 18.1966 26.5738 18.3953L26.5341 24.7592C26.5261 24.9533 26.443 25.1368 26.3023 25.2709C26.1617 25.405 25.9745 25.4793 25.7801 25.478C25.5858 25.4768 25.3995 25.4002 25.2606 25.2644C25.1216 25.1286 25.0408 24.9441 25.0351 24.7499L25.0635 20.1962L18.8806 26.3026C18.739 26.4423 18.5478 26.5202 18.3489 26.5189C18.15 26.5177 17.9597 26.4375 17.8199 26.296Z" fill="white" />
+                  </svg>
+                </span>
+              </button>
             </div>
           </div>
         </div>
 
-        <div className={`${menuOpen ? 'opacity-100' : 'opacity-0'} mt-4 rounded-3xl border border-white/10 bg-[#111111ee] transition duration-500 p-5 text-white shadow-2xl md:hidden`}>
+        <div className={`${menuOpen ? 'opacity-100' : 'opacity-0'} mt-4 rounded-3xl border border-white/10 bg-[#111111ee] transition duration-500 p-5 text-white shadow-2xl lg:hidden`}>
           <div className="space-y-3">
             {navItems.map((label) => (
               <button key={label} className="flex w-full items-center justify-between rounded-3xl border border-white/10 bg-[#222222] px-5 py-3 text-left text-sm font-semibold text-white transition hover:border-[#6b8f6b] hover:bg-[#1d331d]">
@@ -97,6 +108,22 @@ export default function LandingPage() {
                 </svg>
               </button>
             ))}
+
+             <button
+                className='bg-white text-black rounded-full ps-4 py-[3.58px] w-fit flex items-center gap-3  cursor-pointer'
+
+              >
+                <p className="text-sm font-medium">
+                  Get In Touch
+                </p>
+
+                <span>
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="22.7673" width="30.4626" height="31.9993" rx="15.2313" transform="rotate(45.3566 22.7673 0)" fill="#006600" />
+                    <path fillRule="evenodd" clipRule="evenodd" d="M17.8199 26.296C17.6802 26.1544 17.6023 25.9632 17.6036 25.7643C17.6048 25.5654 17.685 25.3751 17.8265 25.2353L24.0094 19.1289L19.4557 19.1006C19.2616 19.0925 19.0781 19.0094 18.944 18.8688C18.8099 18.7281 18.7357 18.5409 18.7369 18.3466C18.7381 18.1522 18.8147 17.966 18.9505 17.827C19.0863 17.688 19.2708 17.6072 19.4651 17.6016L25.8289 17.6412C26.0277 17.6425 26.2177 17.7227 26.3574 17.8641C26.4971 18.0055 26.5749 18.1966 26.5738 18.3953L26.5341 24.7592C26.5261 24.9533 26.443 25.1368 26.3023 25.2709C26.1617 25.405 25.9745 25.4793 25.7801 25.478C25.5858 25.4768 25.3995 25.4002 25.2606 25.2644C25.1216 25.1286 25.0408 24.9441 25.0351 24.7499L25.0635 20.1962L18.8806 26.3026C18.739 26.4423 18.5478 26.5202 18.3489 26.5189C18.15 26.5177 17.9597 26.4375 17.8199 26.296Z" fill="white" />
+                  </svg>
+                </span>
+              </button>
           </div>
         </div>
       </nav>
