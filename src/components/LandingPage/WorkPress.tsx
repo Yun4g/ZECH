@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import ProjectCards from "../procurementCard";
 
 export default function WorkProcess() {
     return (
@@ -103,9 +104,9 @@ export default function WorkProcess() {
                 </div>
 
 
-                <div className="flex flex-col gap-1 mt-4.5 lg:mt-0">
-
-                    <div className="bg-white p-6 md:p-10 rounded-xl shadow-sm flex flex-col lg:flex-row justify-between items-center">
+                <div className="  mt-4.5 lg:mt-0">
+                    <ProjectCards/>
+                    {/* <div className="bg-white p-6 md:p-10 rounded-xl shadow-sm flex flex-col lg:flex-row justify-between items-center">
                         <h3 className="font-semibold text-black max-w-xs text-base  md:text-[20px]">
                             Procurement Of Marine Hoses
                         </h3>
@@ -124,10 +125,11 @@ export default function WorkProcess() {
                         <button className="border border-gray-400 px-2 py-1 mt-1.5  lg:mt-0 rounded-md text-base  ">
                             View Project
                         </button>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
+
         </section>
     );
 }

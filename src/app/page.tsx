@@ -36,7 +36,7 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen w-full overflow-x-hidden bg-[#F2F2F2]">
-      <nav className={` ${menuOpen ? 'bg-[#22222280]' : ''} fixed inset-x-0 top-0 z-50  md:bg-[#22222280] backdrop-blur-[2px]  px-4 py-3.5 sm:px-6 md:px-10 lg:px-16`}>
+      <nav className={` ${menuOpen ? 'bg-[#22222280]' : ''} fixed inset-x-0 top-0 z-50  md:bg-[#22222280]  lg:backdrop-blur-[2px]  px-4 py-3.5 sm:px-6 md:px-10 lg:px-16`}>
         <div className=" flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <Image width={40} height={40} src="/zoilLogo.png" alt="Zech Oil and Gas Logo" className="h-10 w-auto" />
@@ -135,11 +135,11 @@ export default function LandingPage() {
 
           </section>
 
-          <section className="w-full  md:px-16 py-10  ">
+          <section className="w-full  md:px-16 py-10 mt-25 ">
             <CoreValues />
           </section>
 
-          <section className="w-full px-4  md:px-16 md:py-10  ">
+          <section className="w-full px-4  md:px-16 md:py-10 mt-25 ">
             <ServicesSection />
           </section>
 

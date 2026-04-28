@@ -161,7 +161,8 @@ export default function CoreValues() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="w-full hidden md:block lg:w-[40%] h-full sm:h-100 lg:h-auto"
+          className="w-full hidden md:block custom:hidden lg:block lg:w-[40%] h-10
+           lg:h-auto"
         >
           <img
             src="/core vlaue.png"
@@ -184,7 +185,7 @@ export default function CoreValues() {
               Core values
             </motion.p>
 
-            <motion.h2 variants={fadeUp} className="text-xl sm:text-2xl md:text-4xl font-bold text-[#222222] leading-tight">
+            <motion.h2 variants={fadeUp} className="text-xl sm:text-2xl md:text-4xl font-bold text-[#222222]   md:text-white lg:text-[#222222] leading-tight">
               Trusted Global Partner For <br />
               Manufacturing And Construction
             </motion.h2>
@@ -199,7 +200,7 @@ export default function CoreValues() {
               variants={fadeUp}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.96 }}
-              className="bg-[#006600] text-sm font-medium text-white px-5 mt-5 rounded-full flex items-center gap-2 w-fit"
+              className="bg-[#006600] text-sm font-medium text-white ps-5 mt-5 rounded-full flex items-center gap-2 w-fit"
             >
               Get free quote
               <motion.span
@@ -215,7 +216,7 @@ export default function CoreValues() {
           </div>
 
        
-          <div className=" w-full px-4 sm:px-8 md:px-12 py-6 h-fit flex flex-wrap justify-center  lg:justify-start gap-3.25 ">
+          <div className=" w-full px-4 sm:px-8 md:px-12 py-6 h-fit flex flex-wrap md:flex-nowrap justify-center  lg:justify-start gap-3.25 ">
             
             <motion.div variants={cardVariant} className="flex flex-col gap-4 max-w-65.75 p-5 bg-white rounded-4xl">
               <div>
