@@ -47,12 +47,12 @@ function HeroSection() {
             </motion.h1>
 
 
-            <section className='flex flex-col items-start md:items-end justify-center w-full'>
-                <div className="flex flex-wrap items-center justify-start md:justify-end gap-1.5 md:gap-7 me-2 mt-4 w-full">
+            <section className='flex flex-col items-start md:items-end justify-end  w-full'>
+                <div className="flex flex-wrap items-center justify-start md:justify-end gap-1.5 md:gap-5.5 mt-3 md:mt-0 ">
                     {whatZechDoes.map((item, index) => (
                         <motion.p
                             key={index}
-                            className="text-white text-sm md:text-base font-semibold w-[48%] md:w-fit border border-white rounded px-3 md:px-4 py-1"
+                            className="text-white text-sm md:text-base font-semibold w-[48%] md:w-fit border border-white rounded-[5px] px-1.5 py-1"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
@@ -62,9 +62,9 @@ function HeroSection() {
                     ))}
                 </div>
 
-                <div className='flex flex-col w-full md:w-auto lg:ms-60'>
+                <div className='flex flex-col w-full md:w-lg boder-2 md:me-2'>
                     <motion.p
-                        className="text-white text-base md:text-xl mt-3.5  font-semibold md:w-155 wrap-break-word text-center  md:text-start"
+                        className="text-white text-base md:text-xl mt-3.5 borer-2  font-semibold md:w-127.5 wrap-break-word text-center  md:text-start"
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.7, delay: 0.8 }}

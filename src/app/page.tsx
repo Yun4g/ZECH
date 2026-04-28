@@ -43,7 +43,7 @@ export default function LandingPage() {
             <h1 className="hidden md:block text-base font-bold uppercase  text-white sm:text-lg">ZECH OIL AND GAS</h1>
           </div>
 
-          <div className="hidden items-center gap-20 lg:flex">
+          <div className="hidden items-center gap-16 lg:flex">
             {navItems.map((label) => (
               <button key={label} className="flex items-center gap-2 text-sm font-medium text-white transition">
                 <span>{label}</span>
