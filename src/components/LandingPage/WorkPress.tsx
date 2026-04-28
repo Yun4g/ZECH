@@ -8,12 +8,12 @@ export default function WorkProcess() {
         <section>
 
 
-            <h1 className="text-[22px] md:text-[72px] lg:text-[150px] text-center w-full font-bold text-black mb-12">
+            <h1 className="text-[22px] md:text-[72px] lg:text-[150px] text-center w-full font-bold text-black mb-7 md:mb-12">
                 Work Process
             </h1>
 
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 mb-20">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 mb-8 md:mb-20">
 
 
                 {
@@ -66,16 +66,16 @@ export default function WorkProcess() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
                 <div>
-                    <p className="text-[#006600] font-semibold mb-3 text-[24px] ">
+                    <p className="text-[#006600] font-semibold mb-3 text-[24px]  text-center md:text-start">
                         Our Projects
                     </p>
 
-                    <h2 className="text-[20px] md:text-[48px] font-medium leading-tight mb-4">
+                    <h2 className="text-base text-center md:text-start md:text-[48px] font-medium leading-tight mb-4">
                         Built to perform,
-                        <br /> proven to last
+                        <br className="hidden md:block" /> proven to last
                     </h2>
 
-                    <p className="text-[#000000] text-sm  font-medium  mb-12">
+                    <p className="text-[#000000] text-sm text-center md:text-start  font-medium  mb-12">
                         From offshore platforms to onshore industries, Zech oil & gas delivers projects across the globe combining deep engineering expertise with proven operational excellence to bring every site online safely and efficiently.
                     </p>
 

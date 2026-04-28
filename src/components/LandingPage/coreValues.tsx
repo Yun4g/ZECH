@@ -153,7 +153,7 @@ export default function CoreValues() {
 
   return (
     <section className="w-full h-fit">
-      <div className="flex flex-col lg:flex-row flex=wrap h-fit w-full lg:h-135">
+      <div className="flex flex-col lg:flex-row flex-wrap h-fit w-full lg:h-135">
         
      
         <motion.div
@@ -171,7 +171,7 @@ export default function CoreValues() {
           />
         </motion.div>
 
-        {/* CONTENT */}
+   
         <motion.div
           variants={container}
           initial="hidden"
@@ -179,18 +179,18 @@ export default function CoreValues() {
           viewport={{ once: true }}
           className="flex flex-col justify-between w-full lg:w-[60%] gap-10"
         >
-          {/* TEXT */}
-          <div className="px-4 sm:px-8 md:px-12 mt-8">
-            <motion.p variants={fadeUp} className="text-[#006600] text-base md:text-2xl font-semibold">
+
+          <div className="px-4 sm:px-8 md:px-12 mt-3 md:mt-8">
+            <motion.p variants={fadeUp} className="text-[#006600] text-center md:text-start text-lg md:text-2xl md:font-semibold">
               Core values
             </motion.p>
 
-            <motion.h2 variants={fadeUp} className="text-xl sm:text-2xl md:text-4xl font-bold text-[#222222]   md:text-white lg:text-[#222222] leading-tight">
+            <motion.h2 variants={fadeUp} className="text-xl sm:text-2xl md:text-4xl font-bold text-[#222222] text-center md:text-start mt-3.5 md:mt-0  md:text-white lg:text-[#222222] leading-tight">
               Trusted Global Partner For <br />
               Manufacturing And Construction
             </motion.h2>
 
-            <motion.p variants={fadeUp} className="text-[#222222] font-medium text-sm md:text-xl md:mt-2 max-w-xl">
+            <motion.p variants={fadeUp} className="text-[#222222] font-medium text-sm md:text-xl mt-2  text-center md:text-start max-w-xl">
               We seek better ways of managing people, materials, and capital
               using technology as a catalyst in achieving client expectation.
             </motion.p>
@@ -200,7 +200,7 @@ export default function CoreValues() {
               variants={fadeUp}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.96 }}
-              className="bg-[#006600] text-sm font-medium text-white ps-5 mt-5 rounded-full flex items-center gap-2 w-fit"
+              className="bg-[#006600] text-sm font-medium text-white ps-5 mt-5 rounded-full flex justify-center items-center gap-2 w-full md:w-fit"
             >
               Get free quote
               <motion.span
@@ -218,7 +218,7 @@ export default function CoreValues() {
        
           <div className=" w-full px-4 sm:px-8 md:px-12 py-6 h-fit flex flex-wrap md:flex-nowrap justify-center  lg:justify-start gap-3.25 ">
             
-            <motion.div variants={cardVariant} className="flex flex-col gap-4 max-w-65.75 p-5 bg-white rounded-4xl">
+            <motion.div variants={cardVariant} className="flex flex-col gap-4 w-full md:max-w-65.75 p-5 bg-white rounded-4xl">
               <div>
                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="44" height="44" fill="#CCE0CC" />
@@ -239,7 +239,7 @@ export default function CoreValues() {
           
   
 
-            <motion.div variants={cardVariant} className="flex flex-col gap-4 p-5 max-w-65.75 bg-white rounded-4xl">
+            <motion.div variants={cardVariant} className="flex flex-col gap-4 p-5 w-full md:max-w-65.75  bg-white rounded-4xl">
               <div>
                   <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="44" height="44" fill="#CCE0CC" />

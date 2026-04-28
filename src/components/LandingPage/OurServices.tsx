@@ -110,7 +110,7 @@ export default function ServicesSection() {
     };
 
     return (
-        <section className="w-full mt-15">
+        <section className="w-full md:mt-15">
 
 
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12.5 w-full">
@@ -122,14 +122,14 @@ export default function ServicesSection() {
                     variants={containerVariants}
                 >
                     <motion.p
-                        className="text-[#006600] text-[24px] font-semibold mb-3"
+                        className="text-[#006600] text-center md:text-start text-[24px] font-semibold mb-3"
                         variants={itemVariants}
                     >
                         Our Services
                     </motion.p>
 
                     <motion.h2
-                        className="text-3xl md:text-[40px] font-bold text-[#222222] leading-tight max-w-175"
+                        className="text-xl  text-center md:text-start md:text-[40px] font-bold text-[#222222] leading-tight max-w-175"
                         variants={itemVariants}
                     >
                         Tailored Industrial and Engineering Solutions
@@ -140,7 +140,7 @@ export default function ServicesSection() {
                         className="flex flex-col md:flex-row justify-between md:items-center gap-4 md:gap-0"
                         variants={itemVariants}
                     >
-                        <p className="text-[#000000] text-base font-medium mt-3">
+                        <p className="text-[#000000] text-center md:text-start text-sm font-medium mt-3">
                             We offer a comprehensive range of services <br />
                             tailored to meet your needs
                         </p>
@@ -169,7 +169,7 @@ export default function ServicesSection() {
 
 
             <motion.div
-                className="relative w-full h-125 md:h-150 rounded-2xl overflow-hidden"
+                className="relative w-full h-300 md:h-150 rounded-2xl overflow-hidden"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
@@ -188,7 +188,7 @@ export default function ServicesSection() {
                 <div className="absolute inset-0 bg-[#22222280]" />
 
 
-                <div className="absolute bottom-0 left-0 px-4 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                <div className="absolute bottom-0 left-0 md:px-4 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
 
                     {services.map((service, index) => (
                         <motion.div

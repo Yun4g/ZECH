@@ -106,13 +106,13 @@ export default function LandingPage() {
         <section className="flex flex-col items-center max-h-screen h-screen w-full">
           <HeroSection />
 
-          <section className=" w-full md:w-fit z-40 transform p-[10.66px] md:-translate-y-1/2 bg-white flex items-center justify-center h-fit md:shadow-md shadow-[#00000040] md:rounded-[21.8px] mx-auto mb-20">
-            <div className="flex flex-col md:flex-row  items-center justify-center gap-10 w-full">
+          <section className=" w-full md:w-fit z-40 transform p-[10.66px] md:-translate-y-1/2 bg-white flex items-center justify-center h-fit md:shadow-md shadow-[#00000040] md:rounded-[21.8px] mx-auto mb-2.5 md:mb-20">
+            <div className="flex flex-col md:flex-row  items-center justify-center md:gap-10 w-full">
               {Details.map((item, index) => (
-                <div key={index} className="flex flex-col md:flex-row  items-center gap-5.25">
+                <div key={index} className="flex flex-col md:flex-row  items-center md:gap-5.25">
 
                   <div className="flex flex-col items-center justify-center py-2.5 px-3.5">
-                    <h1 className="md:text-[38.5px] font-bold text-[#000000]">
+                    <h1 className=" text-[20px] md:text-[38.5px] font-bold text-[#000000]">
                       {item.title}
                     </h1>
                     <p className="text-xl mt-[10.79px] font-medium text-[#4E4E4E]">
@@ -122,7 +122,7 @@ export default function LandingPage() {
 
 
                   {index !== Details.length - 1 && (
-                    <div className="h-16  w-full  md:w-[2.3px] bg-[#4E4E4E66]" />
+                    <div className=" h-1.5 md:h-16  w-full  md:w-[2.3px] bg-[#4E4E4E66]" />
                   )}
 
                 </div>
@@ -135,20 +135,20 @@ export default function LandingPage() {
 
           </section>
 
-          <section className="w-full  md:px-16 py-10 mt-25 ">
+          <section className="w-full  md:px-16 md:py-10 md:mt-25 ">
             <CoreValues />
           </section>
 
-          <section className="w-full px-4  md:px-16 md:py-10 mt-25 ">
+          <section className="w-full px-4  md:px-16 md:py-10 md:mt-25 ">
             <ServicesSection />
           </section>
 
 
-          <section className="w-full px-4  md:px-16 py-10  ">
+          <section className="w-full px-4  md:px-16 py-8 md:py-10  ">
             <WorkProcess />
           </section>
 
-          <section className="w-full md:px-16 py-25   visitbg h-fit  mt-25 ">
+          <section className="w-full md:px-16 py-25   visitbg h-fit  md:mt-25 ">
             <VisitOffice />
           </section>
 

@@ -99,11 +99,11 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="p-5 bg-[#222222]  rounded-[40px] relative">
+        <footer className="p-5 bg-[#222222]  md:rounded-[40px] relative">
 
             <section className="bg-[#006600] px-6 py-16 text-center relative overflow-hidden rounded-4xl">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_40%,rgba(255,255,255,0.04),transparent_70%)] pointer-events-none" />
-                <h2 className="font-serif text-white text-3xl md:text-4xl font-meduim mb-4">
+                <h2 className="font-serif text-white text-xl md:text-4xl font-meduim mb-4">
                     The next generation of<br />oil &amp; gas innovation
                 </h2>
                 <p className="text-white text-sm md:text-base text-center leading-relaxed max-w-sm mx-auto mb-8">
@@ -128,24 +128,24 @@ export default function Footer() {
        <div className="mt-10 md:mt-15">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-    {/* ABOUT */}
+
     <div className="lg:col-span-1">
-      <h3 className="font-serif text-white text-base md:text-xl font-semibold mb-4">
+      <h3 className="font-serif text-white text-base md:text-xl text-center md:text-start font-semibold mb-4">
         Zech oil & gas
       </h3>
-      <p className="text-[#FFFFFF] text-lg leading-relaxed max-w-sm">
+      <p className="text-[#FFFFFF]  text-center md:text-start text-base md:text-lg leading-relaxed max-w-sm">
         We provide integrated service packages from turnkey onshore/offshore pipeline operations, procurement,
         maintenance, repairs and supplies services, marine and energy services.
       </p>
     </div>
 
-    {/* COMPANY LINKS */}
+
     <div className="flex flex-col md:ms-20 lg:ms-28">
-      <h4 className="text-white text-[24px] font-semibold mb-5">Company</h4>
-      <ul className="flex flex-col gap-y-5">
+      <h4 className="text-white text-lg text-center md:text-start md:text-[24px] font-semibold mb-5">Company</h4>
+      <ul className="flex flex-row md:flex-col justify-between  md:gap-5">
         {navLinks.map((link) => (
           <li key={link}>
-            <a href="#" className="text-white text-lg leading-snug">
+            <a href="#" className="text-white  text-base md:text-lg text-center md:text-start leading-snug">
               {link}
             </a>
           </li>
@@ -153,7 +153,7 @@ export default function Footer() {
       </ul>
     </div>
 
-    {/* CONTACT */}
+  
     <div>
       <h4 className="text-white text-[24px] font-semibold mb-5">Contact Us</h4>
 
@@ -170,7 +170,7 @@ export default function Footer() {
         ))}
       </div>
 
-      {/* NEWSLETTER */}
+ 
       <section className="mt-6 lg:mt-8 w-full">
         <div className="flex w-fit md:w-full bg-[#f5f5f0] rounded-full p-1 md:overflow-hidden">
           <input
@@ -190,7 +190,7 @@ export default function Footer() {
 
   </div>
 
-  {/* SOCIALS */}
+
   <div className="pt-6 flex lg:absolute bottom-3.5 justify-center lg:justify-start">
     <div className="flex gap-2.5">
       {socialLinks.map((s) => (
