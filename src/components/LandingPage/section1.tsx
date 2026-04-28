@@ -40,7 +40,7 @@ function HeroSection() {
                 <p>Nigeria&apos;s Indigenous O&amp;G Services Partner · Est. 2001</p>
             </motion.div>
             <motion.h1
-                className="text-xl md:text-6xl lg:text-[80px] leading-[1.1] mt-4.5 md:mt-0 text-center text-white font-bold  md:max-w-200 "
+                className="text-xl md:text-6xl lg:text-[80px] leading-[1.1] mt-4.5 md:mt-0 text-center md:text-start text-white font-bold  md:max-w-200 "
                 variants={textVariant}
             >
                 Driving Progress Through Industrial <br className='hidden md:block' />  Excellence
