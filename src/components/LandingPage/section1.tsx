@@ -40,31 +40,31 @@ function HeroSection() {
                 <p>Nigeria&apos;s Indigenous O&amp;G Services Partner · Est. 2001</p>
             </motion.div>
             <motion.h1
-                className="text-xl md:text-6xl lg:text-[80px] leading-[1.1] text-white font-bold max-w-full md:max-w-200 "
+                className="text-xl md:text-6xl lg:text-[80px] leading-[1.1] mt-4.5 md:mt-0 text-center text-white font-bold  md:max-w-200 "
                 variants={textVariant}
             >
-                Driving Progress Through Industrial <br />  Excellence
+                Driving Progress Through Industrial <br className='hidden md:block' />  Excellence
             </motion.h1>
 
 
             <section className='flex flex-col items-start md:items-end justify-center w-full'>
-                <div className="flex flex-wrap items-center justify-start md:justify-end gap-4 md:gap-7 me-2 mt-4 w-full">
+                <div className="flex flex-wrap items-center justify-start md:justify-end gap-1.5 md:gap-7 me-2 mt-4 w-full">
                     {whatZechDoes.map((item, index) => (
                         <motion.p
                             key={index}
-                            className="text-white text-sm md:text-base font-semibold border border-white rounded px-3 md:px-4 py-1"
+                            className="text-white text-sm md:text-base font-semibold w-[48%] md:w-fit border border-white rounded px-3 md:px-4 py-1"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
                         >
-                            {item} {index < whatZechDoes.length - 1 ? '·' : ''}
+                            {item} {index < whatZechDoes.length - 1 ? '·' : '·'}
                         </motion.p>   
                     ))}
                 </div>
 
                 <div className='flex flex-col w-full md:w-auto lg:ms-60'>
                     <motion.p
-                        className="text-white text-base md:text-xl mt-3.5  font-semibold md:w-155 wrap-break-word text-center md:text-start"
+                        className="text-white text-base md:text-xl mt-3.5  font-semibold md:w-155 wrap-break-word text-center  md:text-start"
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.7, delay: 0.8 }}
