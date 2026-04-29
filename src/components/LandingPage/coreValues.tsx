@@ -190,7 +190,7 @@ export default function CoreValues() {
               Manufacturing And Construction
             </motion.h2>
 
-            <motion.p variants={fadeUp} className="text-[#222222] font-medium text-sm md:text-xl mt-2  text-center md:text-start max-w-xl">
+            <motion.p variants={fadeUp} className="text-[#222222]   md:text-white lg:text-[#222222] font-medium text-sm md:text-xl mt-2  text-center md:text-start max-w-xl">
               We seek better ways of managing people, materials, and capital
               using technology as a catalyst in achieving client expectation.
             </motion.p>
