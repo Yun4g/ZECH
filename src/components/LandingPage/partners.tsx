@@ -42,7 +42,7 @@ export default function Partners() {
               <Image
                 src={logo}
                 alt="partner logo"
-                width={100}
+                width={70}
                 height={40}
                 className="object-contain"
               />
