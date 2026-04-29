@@ -72,7 +72,7 @@ function HeroSection() {
                         We provide integrated service packages from turnkey onshore/offshore pipeline operations, procurement, maintenance, repairs and supplies services, marine and energy services.
                     </motion.p>
                     <motion.button
-                        className='bg-white rounded-full ps-4 mb-12 md:mb-24 py-[3.58px] w-fit flex items-center gap-3 mt-6 cursor-pointer'
+                        className='bg-white rounded-full ps-4 mb-12 md:mb-24 gap-2 w-fit flex items-center mt-6 cursor-pointer'
                         variants={buttonVariant}
                     >
                         <p className="text-sm font-medium">

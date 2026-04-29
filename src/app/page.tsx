@@ -110,7 +110,7 @@ export default function LandingPage() {
             ))}
 
              <button
-                className='bg-white text-black rounded-full ps-4 py-[3.58px] w-fit flex items-center gap-3  cursor-pointer'
+                className='bg-white text-black rounded-full ps-4  w-fit flex items-center gap-2  cursor-pointer'
 
               >
                 <p className="text-sm font-medium">
